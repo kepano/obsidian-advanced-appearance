@@ -6,7 +6,9 @@ This plugin is designed to work with the default Obsidian theme, or any other th
 
 - Works hand-in-hand with [Hider Plugin](https://github.com/kepano/obsidian-hider) to simplify the Obsidian UI by removing the menu ribbon, tooltips, title bar, scrollbars, etc.
 
-# Developer Documentation
+# Developer documentation
+
+You can access the user's selection via the following CSS variables and classes.
 
 ## CSS variables
 
