@@ -1,10 +1,15 @@
 # Advanced Appearance
 
-This plugin is designed to work with the default Obsidian theme, or any other themes that make use of the standard CSS variables from Obsidian.
+This plugin is designed to work with the default Obsidian theme, or any other themes that make use of the standard CSS variables from Obsidian
 
 ## Usage
 
 Advanced Appearance works hand-in-hand with [Hider Plugin](https://github.com/kepano/obsidian-hider) to simplify the Obsidian UI by removing the menu ribbon, tooltips, title bar, scrollbars, etc.
+
+## Compatible themes
+
+- Obsidian default theme
+- Minimal Theme by @kepano
 
 # Developer documentation
 
