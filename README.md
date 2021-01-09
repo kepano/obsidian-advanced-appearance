@@ -4,13 +4,15 @@ This plugin is designed to work with the default Obsidian theme, or any other th
 
 ## Usage
 
-- Works hand-in-hand with [Hider Plugin](https://github.com/kepano/obsidian-hider) to simplify the Obsidian UI by removing the menu ribbon, tooltips, title bar, scrollbars, etc.
+Advanced Appearance works hand-in-hand with [Hider Plugin](https://github.com/kepano/obsidian-hider) to simplify the Obsidian UI by removing the menu ribbon, tooltips, title bar, scrollbars, etc.
 
 # Developer documentation
 
 You can access the user's settings via the following CSS variables and classes.
 
 ## CSS variables
+
+The following CSS variables are applied to the `body` tag from the user's input:
 
 | Variable | Description |
 | ------ | ----- |
@@ -33,7 +35,9 @@ You can access the user's settings via the following CSS variables and classes.
 
 ## CSS classes for toggles
 
-| Toggle | Class |
+The following classes are applied to the `body` tag when the user turns on a feature:
+
+| Class | Description |
 | ------ | ----- |
 | `.fancy-cursor` | Fancy cursor is on |
 | `.links-int-on` | Underline internal links is on |
@@ -45,7 +49,9 @@ You can access the user's settings via the following CSS variables and classes.
 
 ## CSS classes for theme variants
 
-| Toggle | Class |
+The following classes are applied to the `body` tag based on the selected theme variant:
+
+| Class | Description |
 | ------ | ----- |
 | `.advanced-light` | Light theme: Default |
 | `.advanced-light-tonal` | Light theme: Low contrast |
