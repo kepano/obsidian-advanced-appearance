@@ -12,7 +12,7 @@ You can access the user's settings via the following CSS variables and classes.
 
 ## CSS variables
 
-The following CSS variables are applied to the `body` tag from the user's input:
+The following CSS variables are defined on the `body` tag from the user's input:
 
 | Variable | Description |
 | ------ | ----- |
