@@ -8,7 +8,7 @@ This plugin is designed to work with the default Obsidian theme, or any other th
 
 # Developer documentation
 
-You can access the user's selection via the following CSS variables and classes.
+You can access the user's settings via the following CSS variables and classes.
 
 ## CSS variables
 
