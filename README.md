@@ -8,8 +8,8 @@ Advanced Appearance works hand-in-hand with [Hider Plugin](https://github.com/ke
 
 ## Compatible themes
 
-- Obsidian default theme
-- Minimal Theme by @kepano
+- Obsidian default theme by Obsidian team
+- Minimal by @kepano
 
 # Developer documentation
 
