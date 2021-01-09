@@ -77,7 +77,7 @@ export default class AdvancedAppearance extends Plugin {
 
     this.addCommand({
         id: 'toggle-advanced-light-white',
-        name: 'Use light mode (all white)',
+        name: 'Use light mode (white)',
         callback: () => {
           this.settings.lightStyle = 'advanced-light-white';
           this.saveData(this.settings);
@@ -127,7 +127,7 @@ export default class AdvancedAppearance extends Plugin {
 
     this.addCommand({
         id: 'toggle-advanced-dark-black',
-        name: 'Use dark mode (true black)',
+        name: 'Use dark mode (black)',
         callback: () => {
           this.settings.darkStyle = 'advanced-dark-black';
           this.saveData(this.settings);
@@ -183,8 +183,8 @@ export default class AdvancedAppearance extends Plugin {
     document.body.classList.toggle('links-ext-on', this.settings.underlineExternal);
     document.body.classList.toggle('system-shade', this.settings.useSystemTheme);
     document.body.classList.toggle('full-file-names', !this.settings.trimNames);
-    document.body.classList.toggle('advanced-rel-edit', this.settings.relationLinesEdit);
-    document.body.classList.toggle('advanced-rel-preview', this.settings.relationLinesPreview);
+    document.body.classList.toggle('rel-lines-edit', this.settings.relationLinesEdit);
+    document.body.classList.toggle('rel-lines-preview', this.settings.relationLinesPreview);
 
     // get the custom css element
     const el = document.getElementById('advanced-appearance');
@@ -192,14 +192,14 @@ export default class AdvancedAppearance extends Plugin {
     else {
       // set the settings-dependent css
       el.innerText = `
-        body.advanced-appearance{
-          --font-normal:${this.settings.textNormal}px;
-          --font-small:${this.settings.textSmall}px;
+        body{
+          --font-size-primary:${this.settings.textNormal}px;
+          --font-size-secondary:${this.settings.textSmall}px;
           --line-width:${this.settings.lineWidth}rem;
           --font-monospace:${this.settings.monoFont};
           --font-ui:${this.settings.uiFont};
-          --text:${this.settings.textFont};
-          --text-editor:${this.settings.editorFont};
+          --font-preview:${this.settings.textFont};
+          --font-editor:${this.settings.editorFont};
           --base-h:${this.settings.bgHue};
           --base-s:${this.settings.bgSat}%;
           --base-l:${this.settings.bgLight}%;
@@ -329,7 +329,7 @@ class AdvancedAppearanceSettingTab extends PluginSettingTab {
         .setDesc('Background colors in light mode, can be toggled via hotkey')
         .addDropdown(dropdown => dropdown
           .addOption('advanced-light','Default')
-          .addOption('advanced-light-white','All white')
+          .addOption('advanced-light-white','White')
           .addOption('advanced-light-tonal','Low contrast')
           .addOption('advanced-light-contrast','High contrast')
           .setValue(this.plugin.settings.lightStyle)
@@ -345,7 +345,7 @@ class AdvancedAppearanceSettingTab extends PluginSettingTab {
         .addDropdown(dropdown => dropdown
           .addOption('advanced-dark','Default')
           .addOption('advanced-dark-tonal','Low contrast')
-          .addOption('advanced-dark-black','True black')
+          .addOption('advanced-dark-black','Black')
           .setValue(this.plugin.settings.darkStyle)
           .onChange((value) => {
             this.plugin.settings.darkStyle = value;

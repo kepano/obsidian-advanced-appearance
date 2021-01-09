@@ -8,17 +8,12 @@
   --accent-d:60%;   /* Accent lightness Dark Mode */
   --accent-l:50%;   /* Accent lightness Light Mode */
 
-  --text:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-  
-  /* Editor mode */
-  --text-editor:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-  
-  /* Code */
+  --font-size-primary:15px;
+  --font-size-secondary:12px;
+  --font-preview:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  --font-editor:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   --font-monospace:Menlo,SFMono-Regular,Consolas,"Roboto Mono",monospace;
-
-  /* UI */
   --font-ui:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-
   --max-width:87%;
 
 }
@@ -124,7 +119,7 @@ body, input, button  {
 .popover,
 .vertical-tab-content-container,
 .workspace-leaf-content[data-type=markdown] {
-  font-family:var(--text)
+  font-family:var(--font-preview)
 }
 body, input, button, 
 .cm-s-obsidian .cm-formatting-hashtag,
@@ -134,7 +129,7 @@ body, input, button,
 .cm-s-obsidian span.cm-footref,
 #calendar-container .month,
 #calendar-container .title {
-  font-size:var(--font-normal);
+  font-size:var(--font-size-primary);
 }
 
 .outline,
@@ -168,18 +163,18 @@ p .tag,
 .workspace > .workspace-split:not(.mod-root) .markdown-preview-view,
 .document-search-button,
 .cm-s-obsidian pre.HyperMD-footnote {
-  font-size:var(--font-small);
+  font-size:var(--font-size-secondary);
 }
 
 .popover,
 .vertical-tab-content-container,
 .workspace-leaf-content[data-type=markdown] {
-  font-family:var(--text)
+  font-family:var(--font-preview)
 }
 .markdown-source-view,
 .cm-s-obsidian .cm-formatting-hashtag, 
 .cm-s-obsidian {
-  font-family:var(--text-editor);
+  font-family:var(--font-editor);
 }
 
 body,
@@ -274,14 +269,14 @@ body:not(.links-int-on) .cm-s-obsidian span.cm-hashtag {
 }
 
 /* --------------- */
-/* Relationship lines */
+/* rel-lineship lines */
 
-/* Relationship lines in Preview */
+/* rel-lineship lines in Preview */
 
-body.advanced-rel-preview .markdown-preview-view ul ul {
+body.rel-lines-preview .markdown-preview-view ul ul {
   position:relative;
 }
-body.advanced-rel-preview .markdown-preview-view ul ul::before {
+body.rel-lines-preview .markdown-preview-view ul ul::before {
   content:'';
   border-left:1px solid var(--background-modifier-border);
   position:absolute;
@@ -289,20 +284,20 @@ body.advanced-rel-preview .markdown-preview-view ul ul::before {
   top:0;
   bottom:0; 
 }
-body.advanced-rel-preview .markdown-preview-view ul.contains-task-list::before {
+body.rel-lines-preview .markdown-preview-view ul.contains-task-list::before {
   top:5px;
 }
-body.advanced-rel-preview .markdown-preview-view .task-list-item-checkbox {
+body.rel-lines-preview .markdown-preview-view .task-list-item-checkbox {
   margin-left:-21px;
 }
 
 /* --------------- */
-/* Relationship lines in Edit mode  */
+/* rel-lineship lines in Edit mode  */
 
-body.advanced-rel-edit .cm-hmd-list-indent > .cm-tab {
+body.rel-lines-edit .cm-hmd-list-indent > .cm-tab {
   display:inline-block;
 }
-body.advanced-rel-edit .cm-hmd-list-indent > .cm-tab:after {
+body.rel-lines-edit .cm-hmd-list-indent > .cm-tab:after {
   content:" ";
   display:block;
   width:1px;

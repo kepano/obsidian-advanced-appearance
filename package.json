@@ -1,7 +1,7 @@
 {
-  "name": "obsidian-minimal-theme",
-  "version": "1.0.0",
-  "description": "Minimal",
+  "name": "obsidian-advanced-appearance",
+  "version": "1.0.1",
+  "description": "Advanced Appearance",
   "main": "main.js",
   "scripts": {
     "dev": "rollup --config rollup.config.js -w",
