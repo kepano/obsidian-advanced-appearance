@@ -59,7 +59,7 @@ This plugin is designed to work with the default Obsidian theme, or any other th
 
 Advanced Appearance styles are loosely scoped, making it possible for you to override them by  scoping your overrides to `html body`, e.g. `html body.theme-light`.
 
-# Modifying color variables
+## Modifying color variables
 
 Advanced Appearance allows users to set an accent color and a base color, using HSL sliders. These HSL values are then mapped to Obsidian's default CSS color variables. HSL is used because the values can be easily modified using `calc()` to generate variations of that color. 
 
@@ -71,7 +71,7 @@ You can use these variables to compute shades using `calc()` in your CSS, for ex
 
 You can use this approach to modify the hue and saturation as well.
 
-# Theme variants
+## Theme variants
 
 Advanced Appearance allows users to choose theme variants for both light and dark modes. This allows you create additional styles for accessibility or cosmetic differences. 
 
