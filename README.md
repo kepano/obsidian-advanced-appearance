@@ -1,5 +1,3 @@
-# Advanced Appearance
-
 This plugin is designed to work with the default Obsidian theme, or any other themes that make use of the standard CSS variables from Obsidian
 
 ## Usage
