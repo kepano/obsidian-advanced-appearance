@@ -285,7 +285,7 @@ const DEFAULT_SETTINGS: AdvancedAppearanceSettings = {
   accentLight: 50,
   bgHue: 0,
   bgSat: 0,
-  bgLight: 3,
+  bgLight: 97,
   trimNames: false,
   lightStyle: 'advanced-light',
   darkStyle: 'advanced-dark',
@@ -317,8 +317,15 @@ class AdvancedAppearanceSettingTab extends PluginSettingTab {
 
     containerEl.empty();
     containerEl.createEl('h3', {text: 'Advanced Appearance Settings'});
-    containerEl.createEl('p', {text: 'Download the Hider plugin for options to hide elements in the Obsidian UI.'});
-    containerEl.createEl('a', {text: '@kepano on Patreon and Twitter', href:"https://www.patreon.com/kepano"});
+    containerEl.createEl('span', {text: '♥ Support development my plugins and themes '});
+    containerEl.createEl('strong', {text: '@kepano'});
+    containerEl.createEl('span', {text: ' on '});
+    containerEl.createEl('a', {text: 'Patreon', href:"https://www.patreon.com/kepano"});
+    containerEl.createEl('span', {text: ' and '});
+    containerEl.createEl('a', {text: 'Twitter', href:"https://www.twitter.com/kepano"});
+
+    let myEl = containerEl.createDiv('my-class');
+    let myParagraph = myEl.createEl('p', 'my-child-class');
 
     containerEl.createEl('h3');
     containerEl.createEl('br');
