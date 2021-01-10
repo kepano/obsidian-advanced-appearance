@@ -200,10 +200,10 @@ export default class AdvancedAppearance extends Plugin {
           --font-ui:${this.settings.uiFont};
           --font-preview:${this.settings.textFont};
           --font-editor:${this.settings.editorFont};
-          --base-h:${this.settings.bgHue};
+          --base-h:${this.settings.bgHue}deg;
           --base-s:${this.settings.bgSat}%;
           --base-l:${this.settings.bgLight}%;
-          --accent-h:${this.settings.accentHue};
+          --accent-h:${this.settings.accentHue}deg;
           --accent-s:${this.settings.accentSat}%;
           --accent-d:calc(${this.settings.accentLight}% + 10%);
           --accent-l:${this.settings.accentLight}%;}

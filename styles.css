@@ -1,9 +1,9 @@
 :root {
-  --base-h:0;       /* Base hue */
+  --base-h:0deg;       /* Base hue */
   --base-s:0%;      /* Base saturation */
   --base-d:16%;     /* Base lightness Dark Mode  - 0 is black */
   --base-l:97%;     /* Base lightness Light Mode  - 100 is white */
-  --accent-h:201;   /* Accent hue */
+  --accent-h:201deg;   /* Accent hue */
   --accent-s:17%;   /* Accent saturation */
   --accent-d:60%;   /* Accent lightness Dark Mode */
   --accent-l:50%;   /* Accent lightness Light Mode */
