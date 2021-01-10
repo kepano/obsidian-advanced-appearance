@@ -76,7 +76,7 @@ Advanced Appearance styles are loosely scoped, making it possible for you to ove
 
 Advanced Appearance allows users to set an accent color and a base color, using HSL sliders. These HSL values are then mapped to Obsidian's default CSS color variables. HSL is used because the values can be easily modified using `calc()` to generate variations of that color. 
 
-You can use these variables to compute shades using `calc()` in your CSS, for example, the code below generates a color that is 10% darker than the base color.:
+You can use these variables to compute shades using `calc()` in your CSS, for example, the code below generates a color that is 10% darker than the base color:
 
 ```
 --background-secondary:hsl(var(--base-h),var(--base-s),calc(var(--base-l) - 10%));
