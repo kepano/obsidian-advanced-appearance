@@ -21,14 +21,14 @@ The following CSS variables are defined on the `body` tag from the user's input:
 
 | Variable | Description |
 | ------ | ----- |
-| `--accent-h` | Accent color hue |
-| `--accent-s` | Accent color saturation, expects `%` |
-| `--accent-l` | Accent color lightness, expects `%` |
-| `--accent-d` | Accent color lightness in Dark mode (optional), expects `%` |
-| `--base-h` | Base color hue |
-| `--base-s` | Base color saturation, expects `%` |
-| `--base-l` | Base color lightness, expects `%` |
-| `--base-d` | Base color lightness in Dark mode (optional), expects `%` |
+| `--accent-h` | Accent color hue, in `deg` |
+| `--accent-s` | Accent color saturation, in `%` |
+| `--accent-l` | Accent color lightness, in `%` |
+| `--accent-d` | Accent color lightness in Dark mode (optional), in `%` |
+| `--base-h` | Base color hue, in `deg` |
+| `--base-s` | Base color saturation, in `%` |
+| `--base-l` | Base color lightness, in `%` |
+| `--base-d` | Base color lightness in Dark mode (optional), in `%` |
 | `--font-preview` | Font used in Preview mode |
 | `--font-editor` | Font used in Edit mode |
 | `--font-monospace` | Font used for monospace text |
