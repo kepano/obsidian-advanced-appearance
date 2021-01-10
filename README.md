@@ -1,6 +1,6 @@
 This plugin is designed to work with the default Obsidian theme, or any other themes that make use of the standard CSS variables from Obsidian
 
-Support the development of my plugins and themes @kepano on [Patreon](https://www.patreon.com/kepano) and [Twitter](https://www.twitter.com/kepano).
+Support the development of my plugins and themes **@kepano** on [Patreon](https://www.patreon.com/kepano) and [Twitter](https://www.twitter.com/kepano).
 
 ## Usage
 
