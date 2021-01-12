@@ -190,16 +190,16 @@ export default class AdvancedAppearance extends Plugin {
     const el = document.getElementById('advanced-appearance');
     if (!el) throw "advanced-appearance element not found!";
     else {
-      // set the settings-dependent css
+
       el.innerText = `
-        body{
+        body {
+          --font-monospace:${this.settings.monoFont};
+          --font-preview:${this.settings.textFont};
+          --font-ui:${this.settings.uiFont};
+          --font-editor:${this.settings.editorFont};
           --font-size-primary:${this.settings.textNormal}px;
           --font-size-secondary:${this.settings.textSmall}px;
           --line-width:${this.settings.lineWidth}rem;
-          --font-monospace:${this.settings.monoFont};
-          --font-ui:${this.settings.uiFont};
-          --font-preview:${this.settings.textFont};
-          --font-editor:${this.settings.editorFont};
           --base-h:${this.settings.bgHue}deg;
           --base-s:${this.settings.bgSat}%;
           --base-l:${this.settings.bgLight}%;
@@ -208,6 +208,7 @@ export default class AdvancedAppearance extends Plugin {
           --accent-d:calc(${this.settings.accentLight}% + 10%);
           --accent-l:${this.settings.accentLight}%;}
       `;
+
     }
   }
 
@@ -280,21 +281,21 @@ interface AdvancedAppearanceSettings {
 
 const DEFAULT_SETTINGS: AdvancedAppearanceSettings = {
   theme: 'theme-light',
-  accentHue: 201,
-  accentSat: 17,
-  accentLight: 50,
-  bgHue: 0,
-  bgSat: 0,
+  accentHue: 248,
+  accentSat: 59,
+  accentLight: 64,
+  bgHue: 220,
+  bgSat: 18,
   bgLight: 97,
   trimNames: false,
   lightStyle: 'advanced-light',
   darkStyle: 'advanced-dark',
-  uiFont: '-apple-system,BlinkMacSystemFont,"Segoe UI Emoji","Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,sans-serif',
-  textFont: '-apple-system,BlinkMacSystemFont,"Segoe UI Emoji","Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,sans-serif',
-  editorFont: '-apple-system,BlinkMacSystemFont,"Segoe UI Emoji","Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,sans-serif',
-  monoFont: 'Menlo,SFMono-Regular,Consolas,Roboto Mono,monospace',
-  fancyCursor: true,
-  lineWidth: 40,
+  uiFont: '',
+  textFont: '',
+  editorFont: '',
+  monoFont: '',
+  fancyCursor: false,
+  lineWidth: 42,
   textNormal: 16,
   textSmall: 13,
   underlineInternal: true,
@@ -317,7 +318,7 @@ class AdvancedAppearanceSettingTab extends PluginSettingTab {
 
     containerEl.empty();
     containerEl.createEl('h3', {text: 'Advanced Appearance Settings'});
-    containerEl.createEl('span', {text: '♥ Support development my plugins and themes '});
+    containerEl.createEl('span', {text: '♥ Support development of my plugins and themes '});
     containerEl.createEl('strong', {text: '@kepano'});
     containerEl.createEl('span', {text: ' on '});
     containerEl.createEl('a', {text: 'Patreon', href:"https://www.patreon.com/kepano"});
@@ -552,6 +553,7 @@ class AdvancedAppearanceSettingTab extends PluginSettingTab {
         .setName('Text font')
         .setDesc('Used in preview mode — the font must also be installed on your computer')
         .addDropdown(dropdown => dropdown
+          .addOption('','')
           .addOption('-apple-system,BlinkMacSystemFont,"Segoe UI Emoji","Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,sans-serif','System font')
           .addOption('Inter','Inter')
           .addOption('iA Writer Mono S','iA Mono')
@@ -572,6 +574,7 @@ class AdvancedAppearanceSettingTab extends PluginSettingTab {
         .setName('UI font')
         .setDesc('Used for UI elements')
         .addDropdown(dropdown => dropdown
+          .addOption('','')
           .addOption('-apple-system,BlinkMacSystemFont,"Segoe UI Emoji","Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,sans-serif','System font')
           .addOption('Inter','Inter')
           .addOption('iA Writer Mono S','iA Mono')
@@ -592,6 +595,7 @@ class AdvancedAppearanceSettingTab extends PluginSettingTab {
         .setName('Editor font')
         .setDesc('Used in edit mode')
         .addDropdown(dropdown => dropdown
+          .addOption('','')
           .addOption('-apple-system,BlinkMacSystemFont,"Segoe UI Emoji","Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,sans-serif','System font')
           .addOption('Inter','Inter')
           .addOption('iA Writer Mono S','iA Mono')
@@ -612,6 +616,7 @@ class AdvancedAppearanceSettingTab extends PluginSettingTab {
         .setName('Monospace font')
         .setDesc('Used for code blocks, front matter, etc')
         .addDropdown(dropdown => dropdown
+          .addOption('','')
           .addOption('Menlo,SFMono-Regular,Consolas,Roboto Mono,monospace','System font')
           .addOption('iA Writer Mono S','iA Mono')
           .addOption('iA Writer Duo S','iA Duo')

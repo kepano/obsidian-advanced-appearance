@@ -1,21 +1,17 @@
 :root {
-  --base-h:0deg;       /* Base hue */
-  --base-s:0%;      /* Base saturation */
-  --base-d:16%;     /* Base lightness Dark Mode  - 0 is black */
-  --base-l:97%;     /* Base lightness Light Mode  - 100 is white */
-  --accent-h:201deg;   /* Accent hue */
-  --accent-s:17%;   /* Accent saturation */
-  --accent-d:60%;   /* Accent lightness Dark Mode */
-  --accent-l:50%;   /* Accent lightness Light Mode */
-
-  /* Defaults */
-  --font-size-primary:15px;
-  --font-size-secondary:12px;
-  --font-preview:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-  --font-editor:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-  --font-monospace:Menlo,SFMono-Regular,Consolas,"Roboto Mono",monospace;
-  --font-ui:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   --max-width:87%;
+  --font-preview:var(--default-font);
+  --font-monospace:'Source Code Pro', monospace;
+  --font-ui:var(--default-font);
+  --font-editor:var(--default-font);
+}
+
+body {
+  --font-stack-preview:var(--font-preview);
+  --font-stack-editor:var(--font-editor);
+  --font-stack-monospace:var(--font-monospace);
+  --font-stack-ui:var(--font-ui);
+  --mermaid-font:var(--font-preview);
 }
 
 .theme-light {
@@ -166,12 +162,12 @@ p .tag,
 .popover,
 .vertical-tab-content-container,
 .workspace-leaf-content[data-type=markdown] {
-  font-family:var(--font-preview)
+  font-family:var(--font-stack-preview)
 }
 .markdown-source-view,
 .cm-s-obsidian .cm-formatting-hashtag, 
 .cm-s-obsidian {
-  font-family:var(--font-editor);
+  font-family:var(--font-stack-editor);
 }
 
 body,
@@ -187,7 +183,7 @@ input[type='number'],
 button,
 .dropdown,
 .setting-item-control button {
-  font-family:var(--font-ui);
+  font-family:var(--font-stack-ui);
 }
 
 .CodeMirror pre.HyperMD-table-row,
@@ -206,7 +202,7 @@ button,
 .cm-s-obsidian .CodeMirror-linewidget kbd,
 .cm-s-obsidian .hmd-fold-html kbd
 .CodeMirror-code {
-  font-family:var(--font-monospace);
+  font-family:var(--font-stack-monospace);
 }
 
 /* --------------- */
