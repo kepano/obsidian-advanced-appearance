@@ -44,6 +44,7 @@ The following classes are applied to the `body` tag when the user turns on a fea
 
 | Class | Description |
 | ------ | ----- |
+| `.advanced-appearance` | Advanced Appearance plugin is on |
 | `.fancy-cursor` | Fancy cursor is on |
 | `.links-int-on` | Underline internal links is on |
 | `.links-ext-on` | Underline external links is on |
