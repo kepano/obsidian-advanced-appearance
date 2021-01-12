@@ -1,15 +1,24 @@
-This plugin is designed to work with the default Obsidian theme, or any other themes that make use of the standard CSS variables from Obsidian
-
 Support the development of my plugins and themes **@kepano** on [Patreon](https://www.patreon.com/kepano) and [Twitter](https://www.twitter.com/kepano).
 
-## Usage
+Advanced Appearance enables you to customize various aspects of Obsidian:
 
-Advanced Appearance works hand-in-hand with [Hider Plugin](https://github.com/kepano/obsidian-hider) to simplify the Obsidian UI by removing the menu ribbon, tooltips, title bar, scrollbars, etc.
+- Colors
+- Typography
+  - Custom fonts
+  - Underlining links
+  - Line width
+  - Font sizes
+- Extra details
+  - Relationship lines
+  - Trimming long file names
+- Automatically switch to dark mode based on OS preference
+
+Advanced Appearance works hand-in-hand with [Hider Plugin](https://github.com/kepano/obsidian-hider) which allows you to remove elements of the Obsidian UI such as the menu ribbon, tooltips, title bar, scrollbars, etc.
 
 ## Compatible themes
 
 - Obsidian default theme by Obsidian team
-- Minimal by @kepano
+- Minimal theme by @kepano
 
 # Developer documentation
 
