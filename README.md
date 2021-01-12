@@ -1,5 +1,9 @@
 Support the development of my plugins and themes **@kepano** on [Patreon](https://www.patreon.com/kepano) and [Twitter](https://www.twitter.com/kepano).
 
+---
+
+## Features
+
 Advanced Appearance enables you to customize various aspects of Obsidian:
 
 - Colors
@@ -15,16 +19,16 @@ Advanced Appearance enables you to customize various aspects of Obsidian:
 
 Advanced Appearance works hand-in-hand with [Hider Plugin](https://github.com/kepano/obsidian-hider) which allows you to remove elements of the Obsidian UI such as the menu ribbon, tooltips, title bar, scrollbars, etc.
 
-## Compatible themes
+### Compatible themes
 
 - Obsidian default theme by Obsidian team
 - Minimal theme by @kepano
 
-# Developer documentation
+## Developer documentation
 
 You can access the user's settings via the following CSS variables and classes.
 
-## CSS variables
+### CSS variables
 
 The following CSS variables are defined on the `body` tag from the user's input:
 
@@ -47,7 +51,7 @@ The following CSS variables are defined on the `body` tag from the user's input:
 | `--line-width` | Number of characters per line  |
 | `--max-width` | Maximum width per line |
 
-## CSS classes for toggles
+### CSS classes for toggles
 
 The following classes are applied to the `body` tag when the user turns on a feature:
 
@@ -62,7 +66,7 @@ The following classes are applied to the `body` tag when the user turns on a fea
 | `.rel-lines-preview` | Relationship lines in Preview mode is on |
 | `.system-shade` | System-level dark mode is on |
 
-## CSS classes for theme variants
+### CSS classes for theme variants
 
 The following classes are applied to the `body` tag based on the selected theme variant:
 
@@ -78,11 +82,11 @@ The following classes are applied to the `body` tag based on the selected theme 
 
 ---
 
-# Overriding Advanced Appearance styles
+## Overriding Advanced Appearance styles
 
 Advanced Appearance styles are loosely scoped, making it possible for you to override them by  scoping your overrides to `html body`, e.g. `html body.theme-light`.
 
-## Modifying color variables
+### Modifying color variables
 
 Advanced Appearance allows users to set an accent color and a base color, using HSL sliders. These HSL values are then mapped to Obsidian's default CSS color variables. HSL is used because the values can be easily modified using `calc()` to generate variations of that color. 
 
@@ -94,7 +98,7 @@ You can use these variables to compute shades using `calc()` in your CSS, for ex
 
 You can use this approach to modify the hue and saturation as well.
 
-## Theme variants
+### Theme variants
 
 Advanced Appearance allows users to choose theme variants for both light and dark modes. This allows you create additional styles for accessibility or cosmetic differences. 
 
