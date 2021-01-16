@@ -203,6 +203,7 @@ export default class AdvancedAppearance extends Plugin {
           --base-h:${this.settings.bgHue}deg;
           --base-s:${this.settings.bgSat}%;
           --base-l:${this.settings.bgLight}%;
+          --base-d:16%;
           --accent-h:${this.settings.accentHue}deg;
           --accent-s:${this.settings.accentSat}%;
           --accent-d:calc(${this.settings.accentLight}% + 10%);

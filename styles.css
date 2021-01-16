@@ -4,6 +4,8 @@
   --font-monospace:'Source Code Pro', monospace;
   --font-ui:var(--default-font);
   --font-editor:var(--default-font);
+  --base-d:16%;
+  --accent-d:60%;
 }
 
 body {
