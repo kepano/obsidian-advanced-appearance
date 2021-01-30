@@ -1,4 +1,4 @@
-Support the development of my plugins and themes **@kepano** on [Patreon](https://www.patreon.com/kepano) and [Twitter](https://www.twitter.com/kepano).
+Support the development of my plugins and themes **@kepano** on [Twitter](https://www.twitter.com/kepano), [Patreon](https://www.patreon.com/kepano) or [Buy me a coffee](https://www.buymeacoffee.com/kepano).
 
 ---
 
