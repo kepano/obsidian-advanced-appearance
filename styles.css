@@ -212,7 +212,7 @@ button,
 
 .fancy-cursor .CodeMirror-cursor {
   border:none;
-  border-right:2px solid var(--text-accent);
+  border-left:2px solid var(--text-accent);
 }
 
 /* --------------- */
