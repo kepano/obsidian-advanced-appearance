@@ -1,3 +1,7 @@
+**Jan 22, 2022** This plugin is being retired as there are now better options available out there for customization. My focus will remain on [Minimal Theme](https://github.com/kepano/obsidian-minimal), and [Minimal Theme Settings plugin](https://github.com/kepano/obsidian-minimal-settings). When I created Advanced Appearance in January 2021, the landscape of Obsidian themes was much less advanced than it is today. The good news is that we now have so many great themes to choose from, many of which support the Style Settings plugin for much deeper customization. Thank you! ❤️
+
+---
+
 Support the development of my plugins and themes **@kepano** on [Twitter](https://www.twitter.com/kepano), [Patreon](https://www.patreon.com/kepano) or [Buy me a coffee](https://www.buymeacoffee.com/kepano).
 
 <a href="https://www.buymeacoffee.com/kepano"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=kepano&button_colour=5F7FFF&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"></a>
